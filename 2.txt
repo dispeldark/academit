@@ -1,2 +1,3 @@
 new info in first line
 new info in second line
+new info in third line (via gitHub)
