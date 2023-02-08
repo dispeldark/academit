@@ -1,4 +1,4 @@
 First init
-New changes
+New changes (conflict main)
 changes via gitHub
 new changes via gitHub
