@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<h2>Регистрация на лучшие в мире курсы по тестированию ПО</h2>
+<form action="/handler.php" method="post">
+    <div>
+        <label for="yourName">Введите Ваше имя:</label>
+        <input type="text" id="yourName" name="yourName"
+               placeholder="Иван"/>
+    </div>
+    <br/>
+    <div>
+        <label for="yourSurname">Введите Вашу фамилию:</label>
+        <input type="text" id="yourSurname" name="yourSurname"
+               placeholder="Иванов"/>
+    </div>
+    <div>
+        <p>Укажите Ваш возраст:</p>
+        <label><input type="radio" value="age18Less" name="myRadio">до 18 лет</label>
+        <label><input type="radio" value="age18_25" name="myRadio" checked="checked"> 18 - 25 лет (по
+            умолчанию)</label>
+        <label><input type="radio" value="age25_40" name="myRadio"> 25 - 40 лет</label>
+        <label><input type="radio" value="age40andGreater" name="myRadio"> 40 лет и старше</label>
+    </div>
+    <div>
+        <p>Выберите дополнительные курсы (опционально):</p>
+        <label>
+            <input type="checkbox" value="javaCourse" name="javaCourse"/>java
+        </label>
+        <label>
+            <input type="checkbox" value="htmlCourse" name="htmlCourse"/>html
+        </label>
+        <label>
+            <input type="checkbox" value="sqlCourse" name="sqlCourse"/>SQL
+        </label>
+    </div>
+    <div>
+        <p>Выберите форму обучения:</p>
+        <select name="courseType">
+            <option value="0">Очная</option>
+            <option value="1">Онлайн</option>
+        </select>
+    </div>
+    <div><p>Укажите, с какими компаниями Вы знакомы:</p>
+        <select size="4" multiple name="coursesList">
+            <option value="skillBox">SkillBox</option>
+            <option value="geekBrains">Geek Brains</option>
+            <option value="academIt">Academ IT School</option>
+            <option value="grayHairedTesterSchool">Школа седого тестировщика</option>
+        </select>
+    </div>
+    <div>
+        <br/>
+        <label>
+            Укажите дополнительную информацию о себе:
+            <br/>
+            <br/>
+            <textarea rows="5" cols="40" name="about"></textarea>
+        </label>
+    </div>
+    <br/>
+    <div>
+        <button type="submit">Отправить заявку</button>
+    </div>
+    <br/>
+</form>
+<a href="main.html">Перейти на главную страницу</a>
+</body>
+</html>
